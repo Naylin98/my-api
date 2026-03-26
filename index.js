@@ -8,7 +8,7 @@ app.use(cors());
 app.get("/api/trx", async (req, res) => {
   try {
     const t = req.query.t || "";
-    const url = `http://cyb3rr00t.tech/api/trx-data?t=${t}`;
+    const url = `http://cyb3rr00t.tech/api/trx-data?t=`;
 
     const response = await fetch(url);
     const data = await response.json();
